@@ -11,6 +11,7 @@ html {
   justify-content: center;
 
   font-family: "Hanken Grotesk", sans-serif;
+  font-size: 20px;
 }
 body {
   color: white;
@@ -22,13 +23,12 @@ body {
   word-spacing: 0.5em;
 }
 #clock {
-  font-size: 130px;
+  font-size: 140px;
   flex-grow: 2;
 }
 #login-form {
   flex-grow: 2;
 }
-#todo-form,
 #todo-list {
   flex-grow: 1;
 }
