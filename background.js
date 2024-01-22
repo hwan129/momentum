@@ -1,14 +1,16 @@
 const images = [
-  "photo1.jpeg",
-  "photo2.jpg",
-  "photo3.jpg",
-  "photo4.jpg",
-  "photo5.jpeg",
-  "photo6.jpg",
-  "photo7.jpg",
-  "photo8.jpg",
-  "photo9.jpg",
-  "photo10.jpg",
+  "img1.jpeg",
+  "img2.jpg",
+  "img3.jpg",
+  "img4.jpg",
+  "img5.jpeg",
+  "img6.jpg",
+  "img7.jpg",
+  "img8.jpg",
+  "img9.jpg",
+  "img10.jpg",
+  "img11.jpg",
+  "img12.png",
 ];
 
 const chosenImage = images[Math.floor(Math.random() * images.length)]; // 랜덤으로 이미지 배열에서 하나 고르기
