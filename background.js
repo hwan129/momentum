@@ -11,12 +11,11 @@ const images = [
   "photo10.jpg",
   "photo11.jpg",
   "photo12.jpg",
-  "photo13.jpg",
 ];
 
 const chosenImage = images[Math.floor(Math.random() * images.length)]; // 랜덤으로 이미지 배열에서 하나 고르기
 const bgImage = document.createElement("img"); // html 에 img 태그 추가
-
+bgImage.classList.add("bgImg"); // image에 bgImage 클래스 추가
 bgImage.src = `img/${chosenImage}`; // 이미지 주소 넣기
 
 document.body.appendChild(bgImage); // append는 아래 넣기, prepend는 위에 넣기
