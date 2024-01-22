@@ -13,7 +13,6 @@ function onGeoOk(position) {
       city.innerText = data.name;
       weather.innerText = `${data.weather[0].main} / ${data.main.temp}도`;
     });
-  console.log(url);
 }
 function onGeoError() {
   // 찾는 것 실패
