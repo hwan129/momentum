@@ -10,8 +10,22 @@ function onGeoOk(position) {
     .then((data) => {
       const weather = document.querySelector("#weather span:first-child");
       const city = document.querySelector("#weather span:last-child");
+      let weatherCondition = "";
+
+      console.log(data.weather[0].main);
+      if (data.weather[0].main == "Clouds") {
+        weatherCondition = `${data.weather[0].main} ☁️ `;
+      } else if (data.weather[0].main == "Wind") {
+        weatherCondition = `${data.weather[0].main} ☔ `;
+      } else if (data.weather[0].main == "Snow") {
+        weatherCondition = `${data.weather[0].main} ☃️ `;
+      } else if (data.weather[0].main == "Clear") {
+        weatherCondition = `${data.weather[0].main} ☀️ `;
+      } else {
+        weatherCondition = `${data.weather[0].main} `;
+      }
       city.innerText = data.name;
-      weather.innerText = `${data.weather[0].main} / ${data.main.temp}도`;
+      weather.innerText = `${weatherCondition}/ ${data.main.temp}°C`;
     });
 }
 function onGeoError() {
