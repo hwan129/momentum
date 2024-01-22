@@ -52,7 +52,7 @@ body {
   color: #bdbdbd;
   border: none;
   background: transparent;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid white;
   text-align: center;
 }
 input::placeholder {
