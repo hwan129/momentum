@@ -1,4 +1,4 @@
-const clock = document.querySelector("h2#clock"); // h2의 clock 불러오기
+const clock = document.querySelector("#clock"); // h2의 clock 불러오기
 
 function getClock() {
   const date = new Date(); // date 불러오기

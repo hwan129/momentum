@@ -3,14 +3,12 @@ const images = [
   "photo2.jpg",
   "photo3.jpg",
   "photo4.jpg",
-  "photo5.jpg",
+  "photo5.jpeg",
   "photo6.jpeg",
   "photo7.jpg",
   "photo8.jpg",
   "photo9.jpg",
   "photo10.jpg",
-  "photo11.jpg",
-  "photo12.jpg",
 ];
 
 const chosenImage = images[Math.floor(Math.random() * images.length)]; // 랜덤으로 이미지 배열에서 하나 고르기

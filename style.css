@@ -5,8 +5,18 @@
 * {
   font-family: "Lemon-Regular";
 }
+html {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  font-family: "Hanken Grotesk", sans-serif;
+}
 body {
   color: white;
+}
+#clock {
+  font-size: 80px;
 }
 .bgImg {
   position: absolute;
@@ -18,6 +28,18 @@ body {
   animation: fadeIn 0.5s linear;
 }
 
+#login-input,
+#todo-input {
+  border: none;
+  background: transparent;
+}
+
 .hidden {
   display: none;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

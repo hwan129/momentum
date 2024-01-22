@@ -1,7 +1,7 @@
 // js 코드 순서가 event가 발생하면 돌아가나?
 // display: hidden은 공간이 없어지는 건가, 공간은 유지하되 안의 html이 없어지나
-const loginForm = document.querySelector(".login-form"); // loginform 코드
-const loginInput = document.querySelector(".login-form input"); // loginform 코드의 input 부분
+const loginForm = document.querySelector("#login-form"); // loginform 코드
+const loginInput = document.querySelector("#login-form input"); // loginform 코드의 input 부분
 const greeting = document.querySelector("#greeting"); // greeting 부분
 
 const HIDDEN_CLASSNAME = "hidden"; // 클래스 이름
@@ -19,7 +19,7 @@ function onLoginSubmit(event) {
 
 function paintGreetings(username) {
   // submit하면 나타나는 화면
-  greeting.innerText = `Hello ${username}`; //greeting에 text 변경
+  greeting.innerText = `Hello, ${username}`; //greeting에 text 변경
   greeting.classList.remove(HIDDEN_CLASSNAME); // hidden클래스 제거
 }
 

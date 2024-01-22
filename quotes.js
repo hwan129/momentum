@@ -2,44 +2,44 @@ const quotes = [
   //명언 배열
   {
     quote: "Age is no guarantee of maturity.",
-    author: "Lawana Blackwell",
+    author: " - Lawana Blackwell",
   },
   {
     quote: "When it's late, it's really late. So start right now.",
-    author: "Park",
+    author: " - Park",
   },
   {
     quote:
       "If you don't study now, you will work in a hot place when it's hot and a cold place when it's cold.",
-    author: "Park",
+    author: " - Park",
   },
   {
     quote: 'A difficult "way" is not a "way".',
-    author: "Park",
+    author: " - Park",
   },
   {
     quote: "The early bird gets tired.",
-    author: "Park",
+    author: " - Park",
   },
   {
     quote: "If you can't enjoy it, avoid it.",
-    author: "Park",
+    author: " - Park",
   },
   {
     quote: "This too shall pass.",
-    author: "Et hoc transibit",
+    author: " - Et hoc transibit",
   },
   {
     quote: "Life is unfair, get used to it.",
-    author: "Bill Gates",
+    author: " - Bill Gates",
   },
   {
     quote: "The way to get started is to quit talking and begin doing.",
-    author: "Walt Disney",
+    author: " - Walt Disney",
   },
   {
     quote: "You will never know until you try.",
-    author: "Anonymous",
+    author: " - Anonymous",
   },
 ];
 
