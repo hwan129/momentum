@@ -9,14 +9,33 @@ html {
   display: flex;
   height: 100%;
   justify-content: center;
-  align-items: center;
+
   font-family: "Hanken Grotesk", sans-serif;
 }
 body {
   color: white;
+  height: 99%;
+  display: flex;
+}
+#weather {
+  text-align: center;
+  word-spacing: 0.5em;
 }
 #clock {
-  font-size: 80px;
+  font-size: 130px;
+  flex-grow: 2;
+}
+#login-form {
+  flex-grow: 2;
+}
+#todo-form,
+#todo-list {
+  flex-grow: 1;
+}
+#greeting {
+  display: flex;
+  flex-direction: column-reverse;
+  flex-grow: 2;
 }
 .bgImg {
   position: absolute;
@@ -30,10 +49,23 @@ body {
 
 #login-input,
 #todo-input {
+  color: #bdbdbd;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid black;
+  text-align: center;
+}
+input::placeholder {
+  color: #ccc;
+}
+
+.check {
   border: none;
   background: transparent;
 }
-
+#todo {
+  display: felx;
+}
 .hidden {
   display: none;
 }
@@ -42,4 +74,5 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
 }

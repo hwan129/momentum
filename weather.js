@@ -8,24 +8,25 @@ function onGeoOk(position) {
   fetch(url)
     .then((response) => response.json())
     .then((data) => {
-      const weather = document.querySelector("#weather span:first-child");
-      const city = document.querySelector("#weather span:last-child");
-      let weatherCondition = "";
+      const city = document.querySelector("#weather span:first-child");
+      const weather = document.querySelector("#weather span:last-child");
+      let weatherCondition = ``;
 
-      console.log(data.weather[0].main);
       if (data.weather[0].main == "Clouds") {
-        weatherCondition = `${data.weather[0].main} ☁️ `;
+        weatherCondition = `☁️`;
       } else if (data.weather[0].main == "Wind") {
-        weatherCondition = `${data.weather[0].main} ☔ `;
+        weatherCondition = `☔`;
       } else if (data.weather[0].main == "Snow") {
-        weatherCondition = `${data.weather[0].main} ☃️ `;
+        weatherCondition = `☃️`;
       } else if (data.weather[0].main == "Clear") {
-        weatherCondition = `${data.weather[0].main} ☀️ `;
+        weatherCondition = `☀️`;
       } else {
-        weatherCondition = `${data.weather[0].main} `;
+        weatherCondition = `${data.weather[0].main}`;
       }
       city.innerText = data.name;
-      weather.innerText = `${weatherCondition}/ ${data.main.temp}°C`;
+      weather.innerText = `\n${weatherCondition} ${data.main.temp.toFixed(
+        1
+      )}°C`;
     });
 }
 function onGeoError() {
