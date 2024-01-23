@@ -28,6 +28,8 @@ body {
 }
 #login-form {
   flex-grow: 2;
+  display: flex;
+  flex-direction: column-reverse;
 }
 #todo-list {
   flex-grow: 1;
