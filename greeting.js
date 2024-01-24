@@ -24,7 +24,6 @@ function paintGreetings(username) {
 }
 
 const savedUsername = localStorage.getItem(USERNAME_KEY); // storage의 username 불러오기
-
 if (savedUsername === null) {
   // uesrname을 입력하지 않았다면. (새로고침해도 loginform이 나오지 않게 하기 위해)
   loginForm.classList.remove(HIDDEN_CLASSNAME); // hidden클래스 제거. loginform이 보이게

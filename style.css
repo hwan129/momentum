@@ -18,6 +18,9 @@ body {
   height: 99%;
   display: flex;
 }
+ul {
+  padding: 0px;
+}
 #weather {
   text-align: center;
   word-spacing: 0.5em;
@@ -26,7 +29,7 @@ body {
   font-size: 140px;
   flex-grow: 2;
 }
-#login-form {
+.above {
   flex-grow: 2;
   display: flex;
   flex-direction: column-reverse;
@@ -58,7 +61,7 @@ body {
   text-align: center;
 }
 input::placeholder {
-  color: #ccc;
+  color: #d3d3d3;
 }
 
 .check {
